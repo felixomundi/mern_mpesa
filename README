@@ -1,0 +1,10 @@
+install node modules in the mpesa folder and also in the frontend folder 
+
+create database to save db records
+head to daraja portal paste your credentials to the environment file.
+head to https://ngrok.com  create and activate your account login to your account and paste your auth token to the envrionment file 
+
+
+run npm run dev
+
+for any support find me on 0745566505 or email omundifelix30@gmail.com or https://nyagaka.com/blog/contact
