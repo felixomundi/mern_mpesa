@@ -1,0 +1,27 @@
+{
+  "name": "mpesa",
+  "version": "1.0.0",
+  "description": "mpesa payment using node mysql react and redux",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "server": "nodemon index.js",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.4",
+    "connect-session-sequelize": "^7.1.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "mysql2": "^3.0.1",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "localtunnel": "^2.0.2",
+    "sequelize-cli": "^6.6.2"
+  }
+}
