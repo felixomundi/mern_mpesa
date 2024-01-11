@@ -4,9 +4,8 @@ const dotenv = require("dotenv");
 dotenv.config();
 const PORT = process.env.PORT || 8000;
 const app = express();
-
-app.use(cors({
-   
+const localtunnel = require('localtunnel');
+app.use(cors({   
     origin: ['http://localhost:3000'],
    
 }));
@@ -16,6 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 // app.use("/api/v1/payments", require("./src/routes/mpesaRoute"));
+
 
 app.listen(
    PORT,
