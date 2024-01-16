@@ -4,9 +4,23 @@ const dotenv = require("dotenv");
 dotenv.config();
 const PORT = process.env.PORT || 8000;
 const app = express();
+const ngrok = require("ngrok");
+async function ngrokConnect(){
+    try {
+        var url = await ngrok.connect({
+            proto: 'http', 
+            addr: 8000,
+            authtoken:process.env.AUTH_TOKEN,
+           });
+           console.log(url)
+    } catch (error) {
+        console.log(error);
+    }
+
+} ngrokConnect();
 
 app.use(cors({   
-    origin: ['http://localhost:3000'],
+    origin: ['*'],
    
 }));
 
